@@ -7,20 +7,20 @@ syntax on "コードの色分け
 
 "#####インデント設定#####
 set expandtab
-set tabstop=4 "画面上でタブが占める幅
-set shiftwidth=4 "自動インデントでずれる幅
-set autoindent "改行時に前行のインデントの継続
+set tabstop=4
+set shiftwidth=4
+set cindent
 
 
 "#####検索設定#####
-set ignorecase "大文字/小文字の区別なく検索
-set smartcase "検索文字列に大文字が含まれている場合は区別して検索
-set wrapscan "検索時に最後まで行ったら最初に戻る
+set ignorecase
+set smartcase
+set wrapscan
 
 
 "#####キーマッピング#####
 inoremap { {}<Left>
-inoremap {<Enter> {}<Left><CR><ESC><Tab><S-o>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap ( ()<Left>
 inoremap < <><Left>
 inoremap [ []<Left>
