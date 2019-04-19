@@ -6,6 +6,7 @@ syntax on "コードの色分け
 
 
 "#####インデント設定#####
+set expandtab
 set tabstop=4 "画面上でタブが占める幅
 set shiftwidth=4 "自動インデントでずれる幅
 set autoindent "改行時に前行のインデントの継続
