@@ -1,6 +1,6 @@
 #### Software List that Required ####
 # Rofi (Launcher)                   #
-# fcitx (Japanese input)            #
+# fcitx-mozc (Japanese input)       #
 # surf (Browsing)                   #
 # tabbed (also control for surf)    #
 # feh (Wallpaper)                   #
