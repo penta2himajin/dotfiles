@@ -1,2 +1,3 @@
 rofi.modi: window,run
+rofi.sidebar-mode: true
 rofi.theme: /usr/share/rofi/themes/sidebar.rasi
