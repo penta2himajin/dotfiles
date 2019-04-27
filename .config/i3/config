@@ -191,4 +191,4 @@ exec --no-startup-id fcitx
 exec --no-startup-id feh --bg-fill ~/Star.png
 exec --no-startup-id compton
 
-bindsym $mod+o exec --no-startup-id surf -e $(tabbed -c -d) google.com 
+bindsym $mod+o exec --no-startup-id tabbed -c surf -e google.com 
