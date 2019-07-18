@@ -32,7 +32,6 @@ inoremap <silent><C-u> <ESC>ui<Right>
 inoremap <silent><C-r> <ESC><C-r>i<Right>
 inoremap jj <ESC>
 nnoremap <silent>w :w<CR>
-nnoremap <silent>i i<Right>
 nnoremap r <C-r>
 nnoremap <silent><C-v> <ESC>:vsplit<CR>
 nnoremap <silent><C-b> <ESC>:split<CR>
