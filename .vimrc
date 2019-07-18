@@ -17,6 +17,10 @@ set ignorecase
 set smartcase
 set wrapscan
 
+set noswapfile
+set nobackup
+
+
 
 "#####キーマッピング#####
 inoremap { {}<Left>
