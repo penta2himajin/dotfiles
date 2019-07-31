@@ -52,8 +52,8 @@ nnoremap <silent>s :ter ++close<CR>
 nnoremap <silent><S-r> :source ~/.vimrc<CR>
 nnoremap <silent><S-v> :tabnew<CR>:o ~/.vimrc<CR>
 nnoremap <silent><C-t> :tabnew<CR>
-nnoremap <silent><C-Left> gt
-nnoremap <silent><C-Right> gT
+nnoremap <silent><C-S-h> gt
+nnoremap <silent><C-S-l> gT
 nnoremap <silent>q :q<CR>
 
 
