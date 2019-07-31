@@ -14,7 +14,6 @@ import XMonad.Layout.ResizableTile
 import XMonad.Layout.TwoPane
 import XMonad.Layout.Simplest
 import XMonad.Hooks.DynamicLog
-import XMonad.Util.SpawnOnce
 
 import Data.Monoid
 import System.Exit
