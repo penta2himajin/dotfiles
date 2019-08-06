@@ -1,6 +1,6 @@
-Config { font = "Noto Mono"
+Config { font = "xft:Noto Mono:size=10:bold:antialias=true"
        , bgColor =      "black"
-       , fgColor =      "#646464"
+       , fgColor =      "#808080"
        , position =     Top
        , border =       BottomB
        , borderColor =  "#646464"
