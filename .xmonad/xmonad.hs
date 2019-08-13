@@ -24,7 +24,7 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal      = "run_urxvt -fn \"xft:Noto mon o-10\" -depth 32 -fg white -bg [60]black"
+myTerminal      = "run_urxvt -fn \"xft:Noto mono for Powerline-10\" -depth 32 -fg white -bg [60]black +sb"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -68,6 +68,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- launch a terminal
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
+
+    -- launch surf with tabbed
+    , ((modm,               xK_s     ), spawn "tabbed -c surf -e")
 
     -- launch dmenu
     , ((modm,               xK_p     ), spawn "rofi -show drun")
@@ -248,7 +251,7 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-    spawn "feh --bg-center ~/Pictures/INTELLIGENCE.jpg"
+    spawn "feh --bg-center ~/Pictures/g.jpg"
     spawn "compton"
     spawn "xmobar"
 
