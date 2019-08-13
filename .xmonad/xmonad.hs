@@ -1,10 +1,17 @@
 --
--- xmonad example config file.
+-- xmonad example config file customed by penta2himajin.
 --
--- A template showing all available configuration hooks,
--- and how to override the defaults in your own xmonad.hs conf file.
+-- If you use this settings, you have to install some software below.
 --
--- Normally, you'd only override those defaults you care about.
+--  1. Xmonad
+--  2. Xmobar
+--  3. Rofi
+--  4. Compton
+--  5. feh
+--  6. surf
+--  7. Powerline fonts (from github repo)
+--  8. urxvt (make with run_urxvt)
+--
 --
 
 import XMonad
@@ -251,7 +258,7 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-    spawn "feh --bg-center ~/Pictures/g.jpg"
+    spawn "feh --bg-center ~/r.jpg"
     spawn "compton"
     spawn "xmobar"
 
