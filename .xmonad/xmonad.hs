@@ -76,14 +76,18 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- launch a terminal
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
 
-    -- launch surf with tabbed
-    , ((modm,               xK_s     ), spawn "tabbed -c surf -e")
 
-    -- launch dmenu
-    , ((modm,               xK_p     ), spawn "rofi -show drun")
+    -- reboot system
+    , ((modm,               xK_p     ), spawn "systemctl reboot")
 
-    -- launch gmrun
-    , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
+    -- shutdown system
+    , ((modm .|. shiftMask, xK_p     ), spawn "systemctl poweroff")
+
+    -- hibernate system
+    , ((modm,               xK_h     ), spawn "systemctl hibernate")
+
+    -- launch rofi
+    , ((modm,               xK_d     ), spawn "rofi -show drun")
 
     -- close focused window
     , ((modm .|. shiftMask, xK_c     ), kill)
@@ -258,7 +262,7 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-    spawn "feh --bg-center ~/r.jpg"
+    spawn "feh --bg-scale ~/dotfiles/night.jpg"
     spawn "compton"
     spawn "xmobar"
 
