@@ -78,13 +78,13 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
 
     -- reboot system
-    , ((modm,               xK_p     ), spawn "systemctl reboot")
+    , ((modm .|. shiftMask, xK_r     ), spawn "systemctl reboot")
 
-    -- shutdown system
+    -- poweroff system
     , ((modm .|. shiftMask, xK_p     ), spawn "systemctl poweroff")
 
     -- hibernate system
-    , ((modm,               xK_h     ), spawn "systemctl hibernate")
+    , ((modm .|. shiftMask, xK_h     ), spawn "systemctl hibernate")
 
     -- launch rofi
     , ((modm,               xK_d     ), spawn "rofi -show drun")
