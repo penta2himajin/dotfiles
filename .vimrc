@@ -19,6 +19,7 @@ set wrapscan
 
 set noswapfile
 set nobackup
+set noundofile
 
 
 
