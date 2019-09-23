@@ -31,7 +31,7 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal      = "run_urxvt -fn \"xft:Noto mono for Powerline-10\" -depth 32 -fg white -bg [60]black +sb"
+myTerminal      = "./dotfiles/run_urxvt -fn \"xft:Noto mono for Powerline-10\" -depth 32 -fg white -bg [60]black +sb"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -262,7 +262,7 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-    spawn "feh --bg-scale ~/dotfiles/night.jpg"
+    spawn "feh --bg-center ~/dotfiles/wallpaper.jpg"
     spawn "compton"
     spawn "xmobar"
 
